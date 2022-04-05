@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply overflow-x-hidden text-base font-normal text-slate-500;
+  }
+}
+
+@layer components {
+  .button {
+    @apply focus;
+    @apply inline-flex items-center px-4 py-2;
+    @apply font-medium bg-white border rounded-md shadow-sm text-slate-700 border-slate-300 hover:bg-slate-50;
+  }
+}
+
+@layer utilities {
+  .focus {
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
